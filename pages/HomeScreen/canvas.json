@@ -63,7 +63,7 @@
                   "detachFromLayout": true,
                   "widgetId": "39b5m7r97q",
                   "containerStyle": "none",
-                  "bottomRow": 170,
+                  "bottomRow": 160,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "isVisible": true,
@@ -92,8 +92,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 11,
-                      "bottomRow": 15,
+                      "topRow": 10,
+                      "bottomRow": 14,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -102,7 +102,7 @@
                       "fontFamily": "Montserrat",
                       "parentColumnSpace": 6.416015625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 2.1333333333333333,
+                      "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -135,8 +135,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 6,
-                      "bottomRow": 11,
+                      "topRow": 5,
+                      "bottomRow": 10,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -153,7 +153,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Skip the Ads. Automated Infinite Spotify Previews Streaming.",
+                      "text": "BRB : Bajte Reh Bas : An Appsmith template of an Audio Streaming App, currently based on Spotify Web API",
                       "key": "15k179fryf",
                       "isDeprecated": false,
                       "rightColumn": 64,
@@ -178,8 +178,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 1,
-                      "bottomRow": 6,
+                      "topRow": 0,
+                      "bottomRow": 5,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,

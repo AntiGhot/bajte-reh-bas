@@ -3,6 +3,10 @@
     {
       "id": "HomeScreen",
       "isDefault": true
+    },
+    {
+      "id": "Readme",
+      "isDefault": false
     }
   ],
   "viewMode": false,
