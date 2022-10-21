@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "trackSwitcher",
+    "pageId": "HomeScreen",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\n\n\ttrackStoreInit : async () => {\n\t\tawait storeValue(storeVariables.LOADER_VISIBLITY, true)\n\t\tvar trackData = await searchTracksForTerm.run()\n\n\t\tawait storeValue(storeVariables.TRACK_DATA, trackData)\n\t\tawait storeValue(storeVariables.ID, 0)\n\t\tif (appsmith.store[storeVariables.LIMIT] === undefined){\n\t\t\tawait storeValue(storeVariables.LIMIT, storeVariables.DEFAULT_LIMIT)\n\t\t}\n\t\tif (appsmith.store[storeVariables.OFFSET] === undefined){\n\t\t\tawait storeValue(storeVariables.OFFSET, storeVariables.DEFAULT_OFFSET)\n\t\t}\n\n\t\tawait storeValue(storeVariables.LOADER_VISIBLITY, false)\n\t\treturn trackData\n\t},\n\n\tswitchTrack: async () => {\n\t\tif ( appsmith.store[storeVariables.TRACK_DATA] === undefined ){\n\t\t\tawait storeValue(storeVariables.OFFSET, storeVariables.DEFAULT_OFFSET)\n\t\t\tawait trackSwitcher.trackStoreInit()\n\t\t} else {\n\t\t\tawait storeValue(storeVariables.ID, appsmith.store[storeVariables.ID] + 1)\n\t\t}\n\n\t\tif ( appsmith.store[storeVariables.ID] >= appsmith.store[storeVariables.LIMIT]){\n\t\t\tawait storeValue(storeVariables.LOADER_VISIBLITY, true)\n\t\t\tawait storeValue(storeVariables.OFFSET, appsmith.store[storeVariables.OFFSET] + appsmith.store[storeVariables.LIMIT])\n\t\t\tawait trackSwitcher.trackStoreInit()\n\t\t}\n\t\t//TODO check overflow\n\t\t//TODO try to increase offset // compare with totalsize in trackdata and currentpagesize\n\t\t//TODO add randomization to searchTracksForTerm\n\t\t//TODO cache future urls to be played \n\t\t//TODO spotify call error handling is missing right now\n\t\t//TODO there is an error popup coming on initial load, but dunno why // msg :  Failed to execute actions during page load\n\t\t\n\t\treturn appsmith.store;\n\t},\n\n}",
+    "variables": []
+  },
+  "id": "HomeScreen_trackSwitcher",
+  "deleted": false,
+  "gitSyncId": "6350f7242b79bf615d8201ac_63516e8ba53c13263e40eb25"
+}
