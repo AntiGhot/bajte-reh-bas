@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "functionUtils",
+    "pageId": "TermFromMovieNameInTitle",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\n\tisStringNotEmpty: (str) => {\n\t\t\treturn typeof str === \"string\" && str.trim().length > 0\n\t}\n}",
+    "variables": []
+  },
+  "id": "TermFromMovieNameInTitle_functionUtils",
+  "deleted": false,
+  "gitSyncId": "6353facd4b1a8d429123713c_63540806f6cdb970519bfafc"
+}

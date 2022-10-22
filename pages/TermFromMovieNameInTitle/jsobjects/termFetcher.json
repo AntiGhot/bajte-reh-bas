@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "termFetcher",
+    "pageId": "TermFromMovieNameInTitle",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\n\tfetchTermFromMongo: async () => {\n\t\tvar movieTitleDocument = await getRandomMovieTitleDocument.run()\n\n\t\tif (movieTitleDocument !== undefined){\n\t\t\tvar term = termFetcher.getTermTransformedFromTitle(movieTitleDocument[0]['title'])\n\t\t\tif (functionUtils.isStringNotEmpty(term)){\n\t\t\t\tawait storeValue(storeVariables.CURRENT_TERM, term )\n\t\t\t\treturn appsmith.store[storeVariables.CURRENT_TERM]\n\t\t\t}\n\t\t}\n\t\treturn\n\t},\n\n\tgetTermTransformedFromTitle : ( title) => {\n\t\tif (functionUtils.isStringNotEmpty(title)){\n\t\t\treturn title.trim().split(' ')[0]\n\t\t} else {\n\t\t\treturn\n\t\t}\n\t}\n}",
+    "variables": []
+  },
+  "id": "TermFromMovieNameInTitle_termFetcher",
+  "deleted": false,
+  "gitSyncId": "6353facd4b1a8d429123713c_635401a64b1a8d4291237216"
+}

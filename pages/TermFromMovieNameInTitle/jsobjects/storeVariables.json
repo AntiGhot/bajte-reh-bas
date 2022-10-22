@@ -1,0 +1,52 @@
+{
+  "unpublishedCollection": {
+    "name": "storeVariables",
+    "pageId": "TermFromMovieNameInTitle",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tID : \"ID\",\n\tLIMIT : \"LIMIT\",\n\tOFFSET : \"OFFSET\",\n\tTRACK_DATA: \"TRACK_DATA\",\n\tLOADER_VISIBLITY: \"LOADER_VISIBLITY\",\n\tCURRENT_TERM: \"CURRENT_TERM\",\n\n\tDEFAULT_LIMIT : 3,\n\tDEFAULT_OFFSET : 0,\n\tDEFAULT_LOADER_VISIBLITY: true,\n\n\n\tgetCurrentLimit : () => {\n\t\tif (appsmith.store[storeVariables.LIMIT] === undefined) {\n\t\t\treturn storeVariables.DEFAULT_LIMIT\n\t\t} else {\n\t\t\treturn appsmith.store[storeVariables.LIMIT]\n\t\t}\n\t},\n\n\tgetCurrentOffset : () => {\n\t\tif (appsmith.store[storeVariables.OFFSET] === undefined) {\n\t\t\treturn storeVariables.DEFAULT_OFFSET\n\t\t} else {\n\t\t\treturn appsmith.store[storeVariables.OFFSET]\n\t\t}\t\n\t},\n\n\n\tgetLoaderVisiblity : () => {\n\t\tif (appsmith.store[storeVariables.LOADER_VISIBLITY] === undefined) {\n\t\t\treturn storeVariables.DEFAULT_LOADER_VISIBLITY\n\t\t} else {\n\t\t\treturn appsmith.store[storeVariables.LOADER_VISIBLITY]\n\t\t}\t\n\n\t},\n\n\tgetRandomChar : () => {\n\t\tconst characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';\n\t\treturn characters.charAt(Math.floor(Math.random() * characters.length))\n\t},\n\t\n\tgetCurrentTerm : () => {\n\t\tif (appsmith.store[storeVariables.CURRENT_TERM] === undefined) {\n\t\t\treturn storeVariables.getRandomChar()\n\t\t} else {\n\t\t\treturn appsmith.store[storeVariables.CURRENT_TERM]\n\t\t}\t\n\t}\n}\n\n\n\n\n",
+    "variables": [
+      {
+        "name": "ID",
+        "value": "\"ID\""
+      },
+      {
+        "name": "LIMIT",
+        "value": "\"LIMIT\""
+      },
+      {
+        "name": "OFFSET",
+        "value": "\"OFFSET\""
+      },
+      {
+        "name": "TRACK_DATA",
+        "value": "\"TRACK_DATA\""
+      },
+      {
+        "name": "LOADER_VISIBLITY",
+        "value": "\"LOADER_VISIBLITY\""
+      },
+      {
+        "name": "CURRENT_TERM",
+        "value": "\"CURRENT_TERM\""
+      },
+      {
+        "name": "DEFAULT_LIMIT",
+        "value": "3"
+      },
+      {
+        "name": "DEFAULT_OFFSET",
+        "value": "0"
+      },
+      {
+        "name": "DEFAULT_LOADER_VISIBLITY",
+        "value": "true"
+      }
+    ]
+  },
+  "id": "TermFromMovieNameInTitle_storeVariables",
+  "deleted": false,
+  "gitSyncId": "6353facd4b1a8d429123713c_6353fb4731cf9c0f4917ea83"
+}

@@ -7,6 +7,10 @@
     {
       "id": "Readme",
       "isDefault": false
+    },
+    {
+      "id": "TermFromMovieNameInTitle",
+      "isDefault": false
     }
   ],
   "viewMode": false,
