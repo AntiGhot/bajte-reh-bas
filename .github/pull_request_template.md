@@ -24,6 +24,6 @@ Fixes # (issue)
 
 ## Notes for us to verify your change
 (Currently we would be doing a manual testing.)
-(Maintainer may clone main, pull changes from the branch of this pr, deploy to appsmith the cloned main with changes, and test the functionality.)
+(Maintainer may connect to fork-remote and checkout the branch to merge into this repo, pull changes, deploy to appsmith and test the functionality.)
 
 [Please provide some description so that we can complete this faster]
