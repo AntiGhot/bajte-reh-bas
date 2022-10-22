@@ -29,7 +29,7 @@
             {
               "tabId": "",
               "boxShadow": "none",
-              "widgetName": "Container1",
+              "widgetName": "footer",
               "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
               "isCanvas": true,
               "displayName": "Container",
