@@ -23,5 +23,7 @@ Fixes # (issue)
 
 
 ## Notes for us to verify your change
+(Currently we would be doing a manual testing.)
+(Maintainer may clone main, pull changes from the branch of this pr, deploy to appsmith the cloned main with changes, and test the functionality.)
 
-[So that we can complete this faster]
+[Please provide some description so that we can complete this faster]
