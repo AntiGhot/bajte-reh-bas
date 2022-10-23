@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 750,
+          "bottomRow": 760,
           "containerStyle": "none",
           "snapRows": 62,
           "parentRowSpace": 1,
@@ -38,8 +38,8 @@
                 "parent",
                 "group"
               ],
-              "topRow": 4,
-              "bottomRow": 67,
+              "topRow": 5,
+              "bottomRow": 68,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -55,7 +55,7 @@
                   "detachFromLayout": true,
                   "widgetId": "tcdsrmcdos",
                   "containerStyle": "none",
-                  "bottomRow": 417.46875,
+                  "bottomRow": 610,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "isVisible": true,
@@ -88,8 +88,8 @@
                         "parent",
                         "group"
                       ],
-                      "topRow": 44,
-                      "bottomRow": 61,
+                      "topRow": 42,
+                      "bottomRow": 59,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -292,8 +292,8 @@
                       "searchTags": [
                         "percent"
                       ],
-                      "topRow": 39,
-                      "bottomRow": 43,
+                      "topRow": 37,
+                      "bottomRow": 41,
                       "parentRowSpace": 10,
                       "type": "PROGRESS_WIDGET",
                       "isIndeterminate": true,
@@ -301,7 +301,7 @@
                       "fillColor": "#831843",
                       "parentColumnSpace": 6.416015625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 17.066666666666666,
+                      "leftColumn": 18,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -313,7 +313,7 @@
                       "key": "mpsr44vjef",
                       "showResult": false,
                       "isDeprecated": false,
-                      "rightColumn": 46.93333333333333,
+                      "rightColumn": 48,
                       "counterClosewise": false,
                       "widgetId": "awkcbnzl2n",
                       "isVisible": "{{storeVariables.getLoaderVisiblity()}}",
@@ -344,8 +344,8 @@
                         "wave",
                         "player"
                       ],
-                      "topRow": 33,
-                      "bottomRow": 38,
+                      "topRow": 32,
+                      "bottomRow": 37,
                       "parentRowSpace": 10,
                       "type": "AUDIO_WIDGET",
                       "hideCard": false,
@@ -356,7 +356,7 @@
                           "key": "onEnd"
                         }
                       ],
-                      "leftColumn": 11.733333333333333,
+                      "leftColumn": 12,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -373,7 +373,7 @@
                       ],
                       "key": "2tj6tcpeoc",
                       "isDeprecated": false,
-                      "rightColumn": 53.333333333333336,
+                      "rightColumn": 54,
                       "widgetId": "qednyn9oea",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": "{{!storeVariables.getLoaderVisiblity()}}",
@@ -395,8 +395,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 24,
-                      "bottomRow": 33,
+                      "topRow": 23,
+                      "bottomRow": 32,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -405,7 +405,7 @@
                       "fontFamily": "Poppins",
                       "parentColumnSpace": 6.416015625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 2.1333333333333333,
+                      "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -419,7 +419,7 @@
                       "text": "{{appsmith.store[storeVariables.TRACK_DATA].tracks.items[appsmith.store[storeVariables.ID]].name}}",
                       "key": "15k179fryf",
                       "isDeprecated": false,
-                      "rightColumn": 61.86666666666667,
+                      "rightColumn": 62,
                       "textAlign": "CENTER",
                       "widgetId": "nmhh8g762k",
                       "isVisible": true,
@@ -442,7 +442,7 @@
                         "label"
                       ],
                       "topRow": 19,
-                      "bottomRow": 24,
+                      "bottomRow": 23,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -451,7 +451,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 6.416015625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 2.1333333333333333,
+                      "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
                           "key": "fontFamily"
@@ -468,7 +468,7 @@
                       "text": "{{appsmith.store[storeVariables.TRACK_DATA].tracks.items[appsmith.store[storeVariables.ID]].artists.values().next().value.name}}",
                       "key": "15k179fryf",
                       "isDeprecated": false,
-                      "rightColumn": 61.86666666666667,
+                      "rightColumn": 62,
                       "textAlign": "CENTER",
                       "widgetId": "wcpa3pnw8t",
                       "isVisible": true,
@@ -495,7 +495,7 @@
                       "parentColumnSpace": 6.416015625,
                       "dynamicTriggerPathList": [],
                       "imageShape": "RECTANGLE",
-                      "leftColumn": 17.066666666666666,
+                      "leftColumn": 17,
                       "dynamicBindingPathList": [
                         {
                           "key": "image"
@@ -505,7 +505,7 @@
                       "key": "9x7kk61za1",
                       "image": "{{appsmith.store[storeVariables.TRACK_DATA].tracks.items[appsmith.store[storeVariables.ID]].album.images[0].url}}",
                       "isDeprecated": false,
-                      "rightColumn": 46.93333333333333,
+                      "rightColumn": 47,
                       "objectFit": "cover",
                       "widgetId": "xkqiftixtg",
                       "isVisible": true,
@@ -544,7 +544,7 @@
                 "label"
               ],
               "topRow": 0,
-              "bottomRow": 4,
+              "bottomRow": 5,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -553,7 +553,7 @@
               "fontFamily": "Rubik",
               "parentColumnSpace": 6.84375,
               "dynamicTriggerPathList": [],
-              "leftColumn": 6,
+              "leftColumn": 2,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -564,10 +564,10 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
-              "text": "now playing from the term '{{storeVariables.getCurrentTerm()}}'",
+              "text": "now playing from the term '{{storeVariables.getCurrentTerm()}}'\n{{storeVariables.getMovieTitleLine()}}",
               "key": "15k179fryf",
               "isDeprecated": false,
-              "rightColumn": 60,
+              "rightColumn": 62,
               "textAlign": "CENTER",
               "widgetId": "2d1ftuwxq0",
               "isVisible": true,

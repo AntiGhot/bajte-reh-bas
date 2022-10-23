@@ -6,7 +6,7 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "body": "export default {\n\tID : \"ID\",\n\tLIMIT : \"LIMIT\",\n\tOFFSET : \"OFFSET\",\n\tTRACK_DATA: \"TRACK_DATA\",\n\tLOADER_VISIBLITY: \"LOADER_VISIBLITY\",\n\tCURRENT_TERM: \"CURRENT_TERM\",\n\n\tDEFAULT_LIMIT : 3,\n\tDEFAULT_OFFSET : 0,\n\tDEFAULT_LOADER_VISIBLITY: true,\n\n\n\tgetCurrentLimit : () => {\n\t\tif (appsmith.store[storeVariables.LIMIT] === undefined) {\n\t\t\treturn storeVariables.DEFAULT_LIMIT\n\t\t} else {\n\t\t\treturn appsmith.store[storeVariables.LIMIT]\n\t\t}\n\t},\n\n\tgetCurrentOffset : () => {\n\t\tif (appsmith.store[storeVariables.OFFSET] === undefined) {\n\t\t\treturn storeVariables.DEFAULT_OFFSET\n\t\t} else {\n\t\t\treturn appsmith.store[storeVariables.OFFSET]\n\t\t}\t\n\t},\n\n\n\tgetLoaderVisiblity : () => {\n\t\tif (appsmith.store[storeVariables.LOADER_VISIBLITY] === undefined) {\n\t\t\treturn storeVariables.DEFAULT_LOADER_VISIBLITY\n\t\t} else {\n\t\t\treturn appsmith.store[storeVariables.LOADER_VISIBLITY]\n\t\t}\t\n\n\t},\n\n\tgetRandomChar : () => {\n\t\tconst characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';\n\t\treturn characters.charAt(Math.floor(Math.random() * characters.length))\n\t},\n\t\n\tgetCurrentTerm : () => {\n\t\tif (appsmith.store[storeVariables.CURRENT_TERM] === undefined) {\n\t\t\treturn storeVariables.getRandomChar()\n\t\t} else {\n\t\t\treturn appsmith.store[storeVariables.CURRENT_TERM]\n\t\t}\t\n\t}\n}\n\n\n\n\n",
+    "body": "export default {\n\tID : \"ID\",\n\tLIMIT : \"LIMIT\",\n\tOFFSET : \"OFFSET\",\n\tTRACK_DATA: \"TRACK_DATA\",\n\tLOADER_VISIBLITY: \"LOADER_VISIBLITY\",\n\tCURRENT_TERM: \"CURRENT_TERM\",\n\tCURRENT_MOVIE_TITLE: \"CURRENT_MOVIE_TITLE\",\n\n\tDEFAULT_LIMIT : 3,\n\tDEFAULT_OFFSET : 0,\n\tDEFAULT_LOADER_VISIBLITY: true,\n\n\n\tgetCurrentLimit : () => {\n\t\tif (appsmith.store[storeVariables.LIMIT] === undefined) {\n\t\t\treturn storeVariables.DEFAULT_LIMIT\n\t\t} else {\n\t\t\treturn appsmith.store[storeVariables.LIMIT]\n\t\t}\n\t},\n\n\tgetCurrentOffset : () => {\n\t\tif (appsmith.store[storeVariables.OFFSET] === undefined) {\n\t\t\treturn storeVariables.DEFAULT_OFFSET\n\t\t} else {\n\t\t\treturn appsmith.store[storeVariables.OFFSET]\n\t\t}\t\n\t},\n\n\n\tgetLoaderVisiblity : () => {\n\t\tif (appsmith.store[storeVariables.LOADER_VISIBLITY] === undefined) {\n\t\t\treturn storeVariables.DEFAULT_LOADER_VISIBLITY\n\t\t} else {\n\t\t\treturn appsmith.store[storeVariables.LOADER_VISIBLITY]\n\t\t}\t\n\n\t},\n\n\tgetRandomChar : () => {\n\t\tconst characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';\n\t\treturn characters.charAt(Math.floor(Math.random() * characters.length))\n\t},\n\t\n\tgetCurrentTerm : () => {\n\t\tif (appsmith.store[storeVariables.CURRENT_TERM] === undefined) {\n\t\t\treturn storeVariables.getRandomChar()\n\t\t} else {\n\t\t\treturn appsmith.store[storeVariables.CURRENT_TERM]\n\t\t}\t\n\t},\n\t\n\tgetMovieTitleLine : () => {\n\t\tif (appsmith.store[storeVariables.CURRENT_MOVIE_TITLE] === undefined){\n\t\t\treturn \"\"\n\t\t}\n\t\treturn \"from the movie title '\" + appsmith.store[storeVariables.CURRENT_MOVIE_TITLE] + \"'\";\n\t}\n}\n\n\n\n\n",
     "variables": [
       {
         "name": "ID",
@@ -31,6 +31,10 @@
       {
         "name": "CURRENT_TERM",
         "value": "\"CURRENT_TERM\""
+      },
+      {
+        "name": "CURRENT_MOVIE_TITLE",
+        "value": "\"CURRENT_MOVIE_TITLE\""
       },
       {
         "name": "DEFAULT_LIMIT",
