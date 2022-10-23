@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  var movieTitleDocument = await getRandomMovieTitleDocument.run();\n  if (movieTitleDocument !== undefined) {\n    var term = termFetcher.getTermTransformedFromTitle(movieTitleDocument[0]['title']);\n    if (functionUtils.isStringNotEmpty(term)) {\n      await storeValue(storeVariables.CURRENT_TERM, term);\n      return appsmith.store[storeVariables.CURRENT_TERM];\n    }\n  }\n  return;\n}",
+      "body": "async () => {\n  var movieTitleDocument = await getRandomMovieTitleDocument.run();\n  if (movieTitleDocument !== undefined) {\n    var movieTitle = movieTitleDocument[0]['title'];\n    var term = termFetcher.getTermTransformedFromTitle(movieTitle);\n    if (functionUtils.isStringNotEmpty(term)) {\n      await storeValue(storeVariables.CURRENT_TERM, term);\n      await storeValue(storeVariables.CURRENT_MOVIE_TITLE, movieTitle);\n      return appsmith.store[storeVariables.CURRENT_TERM];\n    }\n  }\n  return;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  var movieTitleDocument = await getRandomMovieTitleDocument.run();\n  if (movieTitleDocument !== undefined) {\n    var term = termFetcher.getTermTransformedFromTitle(movieTitleDocument[0]['title']);\n    if (functionUtils.isStringNotEmpty(term)) {\n      await storeValue(storeVariables.CURRENT_TERM, term);\n      return appsmith.store[storeVariables.CURRENT_TERM];\n    }\n  }\n  return;\n}"
+      "async () => {\n  var movieTitleDocument = await getRandomMovieTitleDocument.run();\n  if (movieTitleDocument !== undefined) {\n    var movieTitle = movieTitleDocument[0]['title'];\n    var term = termFetcher.getTermTransformedFromTitle(movieTitle);\n    if (functionUtils.isStringNotEmpty(term)) {\n      await storeValue(storeVariables.CURRENT_TERM, term);\n      await storeValue(storeVariables.CURRENT_MOVIE_TITLE, movieTitle);\n      return appsmith.store[storeVariables.CURRENT_TERM];\n    }\n  }\n  return;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
