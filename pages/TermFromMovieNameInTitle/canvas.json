@@ -55,7 +55,7 @@
                   "detachFromLayout": true,
                   "widgetId": "tcdsrmcdos",
                   "containerStyle": "none",
-                  "bottomRow": 610,
+                  "bottomRow": 600,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "isVisible": true,
@@ -88,8 +88,8 @@
                         "parent",
                         "group"
                       ],
-                      "topRow": 42,
-                      "bottomRow": 59,
+                      "topRow": 41,
+                      "bottomRow": 58,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -237,7 +237,7 @@
                               "fontFamily": "Nunito Sans",
                               "parentColumnSpace": 6.416015625,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 8,
+                              "leftColumn": 10,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -248,7 +248,7 @@
                               "text": "बजते रह बस",
                               "key": "15k179fryf",
                               "isDeprecated": false,
-                              "rightColumn": 55,
+                              "rightColumn": 53,
                               "textAlign": "CENTER",
                               "widgetId": "kc6w1qnwd0",
                               "isVisible": true,
@@ -419,7 +419,7 @@
                       "text": "{{appsmith.store[storeVariables.TRACK_DATA].tracks.items[appsmith.store[storeVariables.ID]].name}}",
                       "key": "15k179fryf",
                       "isDeprecated": false,
-                      "rightColumn": 62,
+                      "rightColumn": 61,
                       "textAlign": "CENTER",
                       "widgetId": "nmhh8g762k",
                       "isVisible": true,
